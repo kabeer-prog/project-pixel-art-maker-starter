@@ -1,4 +1,4 @@
-# Pixel Art Maker Project UDACITY  JS PROJECT 
+# Pixel Art Maker Project UDACITY  JAVASCRIPT PROJECT 
 
 ## Table of Contents
 
