@@ -29,20 +29,43 @@
 
 
 
-// Select color input
-// Select size input
+// Select color input 
+// Select size input(height, width)
+var height, width, color;
+
+// when the submit button is clicked, after the size of the grid is inputted, call function makeGrid()
+$('#sizePicker').submit(function (event){
+    event.preventDefault();
+    height = $('#inputHeight').val();
+    width =$('#inputWidth').val();
+    makeGrid(height, width);
+    // console.log("height is " + height +" and" + "weight is "+ width)
+})
 
 
 
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
+function makeGrid(x, y) {
 
 // Your code goes here!
+        $('tr').remove();
+        for ( var i = 1; i <= x; i++){
+            $('#pixelCanvas').append('<tr id=table' + i + '></tr>');
+            for (var j= 1; j <= y; j++){
+                $('#table' + i).append('<td></td>');
+            }
+        }
+        ///add color to cell after creation while it's been clicked
+        $('td').click(function addColor(){
+            color =$('#colorPicker').val();
 
+            if ($(this).attr('style')){
+                $(this).removeAttr('style')
+            }else{
+                $(this).attr("style", "background-color:" + color);
+            }
+        })
 }
 
-function change(){
-    
-}
