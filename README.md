@@ -31,4 +31,6 @@ Declaring functions and attaching them to DOM objects as event listeners
 Writing nested loops and using loop variables
 
 
-Got insiration from https://www.w3schools.com/jsref/met_table_insertrow.asp
+Got insiration from 
+https://www.w3schools.com/jsref/met_table_insertrow.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Event/target
