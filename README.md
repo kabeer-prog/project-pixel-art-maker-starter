@@ -1,5 +1,7 @@
 # Pixel Art Maker Project UDACITY  JAVASCRIPT PROJECT 
 
+LIVE URL: udacitypixelart.netlify.app
+
 ## Table of Contents
 
 * [Instructions](#instructions)
