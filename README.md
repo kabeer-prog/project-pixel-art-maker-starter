@@ -22,6 +22,8 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 
 The App takes input from the user and makes Pixel Images from the input
 
+
+
 SKills
 Defining variables with const and let
 Accessing the DOM using methods of the document object
