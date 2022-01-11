@@ -32,5 +32,7 @@ Writing nested loops and using loop variables
 
 
 Got insiration from 
+
 https://www.w3schools.com/jsref/met_table_insertrow.asp
 https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp
