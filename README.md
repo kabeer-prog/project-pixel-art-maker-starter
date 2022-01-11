@@ -29,3 +29,6 @@ Defining variables with const and let
 Accessing the DOM using methods of the document object
 Declaring functions and attaching them to DOM objects as event listeners
 Writing nested loops and using loop variables
+
+
+Got insiration from https://www.w3schools.com/jsref/met_table_insertrow.asp
