@@ -34,38 +34,55 @@
 var height, width, color;
 
 // when the submit button is clicked, after the size of the grid is inputted, call function makeGrid()
-$('#sizePicker').submit(function (event){
+// $('#sizePicker').submit(function (event){
+//     event.preventDefault();
+//     height = $('#inputHeight').val();
+//     width =$('#inputWidth').val();
+//     makeGrid(height, width);
+//     // console.log("height is " + height +" and" + "weight is "+ width)
+// })
+document.querySelector("#sizePicker").addEventListener('click', formSubmission)
+
+function formSubmission(){
     event.preventDefault();
-    height = $('#inputHeight').val();
-    width =$('#inputWidth').val();
+    let height = document.getElementById('inputHeight').value;
+    let width = document.getElementById('inputWidth').value;
     makeGrid(height, width);
-    // console.log("height is " + height +" and" + "weight is "+ width)
-})
 
+}
+function makeGrid (height, width){
 
-
+    let table = document.getElementById('pixelCanvas');
+    for ( var i = 0; i <= height; i++){
+        // table.append('<tr id=tabl' + i + '></tr>');
+        table.append(<tr></tr>);
+        for (var j= 0; j <= width; j++){
+            $('#tabl' + i).append('<td></td>');
+        }
+}
+}
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid(x, y) {
+// function makeGrid(x, y) {
 
-// Your code goes here!
-        $('tr').remove();
-        for ( var i = 1; i <= x; i++){
-            $('#pixelCanvas').append('<tr id=table' + i + '></tr>');
-            for (var j= 1; j <= y; j++){
-                $('#table' + i).append('<td></td>');
-            }
-        }
-        ///add color to cell after creation while it's been clicked
-        $('td').click(function addColor(){
-            color =$('#colorPicker').val();
+// // Your code goes here!
+//         $('tr').remove();
+//         for ( var i = 1; i <= x; i++){
+//             $('#pixelCanvas').append('<tr id=table' + i + '></tr>');
+//             for (var j= 1; j <= y; j++){
+//                 $('#table' + i).append('<td></td>');
+//             }
+//         }
+//         ///add color to cell after creation while it's been clicked
+//         $('td').click(function addColor(){
+//             color =$('#colorPicker').val();
 
-            if ($(this).attr('style')){
-                $(this).removeAttr('style')
-            }else{
-                $(this).attr("style", "background-color:" + color);
-            }
-        })
-}
+//             if ($(this).attr('style')){
+//                 $(this).removeAttr('style')
+//             }else{
+//                 $(this).attr("style", "background-color:" + color);
+//             }
+//         })
+// }
 
