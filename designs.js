@@ -24,7 +24,7 @@ function submit(e){
 function makeGrid(height, width){
 //     picks" the element with id 'pixelCanvas' i.e table from the DOM,set it to a variable table
     let table = document.getElementById('pixelCanvas');
-    
+    table.innerHTML = ""
     for (let i = 1; i< height; i++){
         //insert row to the table
         
