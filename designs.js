@@ -25,11 +25,11 @@ function makeGrid(height, width){
 //     picks" the element with id 'pixelCanvas' i.e table from the DOM,set it to a variable table
     let table = document.getElementById('pixelCanvas');
     table.innerHTML = ""
-    for (let i = 1; i< height; i++){
+    for (let i = 0; i< height; i++){
         //insert row to the table
         
       let tableRow = table.insertRow();
-      for (let j = 1; j < width; j++){
+      for (let j = 0; j < width; j++){
           //insert cells to the rows
         let column = tableRow.insertCell();
         // pick and prepare the cell to be clicked from the table and add an event listener to it so it can pick vaalues of the color 
