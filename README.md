@@ -26,7 +26,7 @@ The App takes input from the user and makes Pixel Images from the input
 
 
 
-SKills
+Skills
 Defining variables with const and let
 Accessing the DOM using methods of the document object
 Declaring functions and attaching them to DOM objects as event listeners
@@ -51,7 +51,7 @@ Writing nested loops and using loop variables
 
 
 
-Got insiration from 
+Got inspiration from 
 
 https://www.w3schools.com/jsref/met_table_insertrow.asp
 https://developer.mozilla.org/en-US/docs/Web/API/Event/target
